@@ -18,7 +18,8 @@ export function* signIn({ payload }) {
     const { token, user } = response.data;
 
     if (!user.provider) {
-      toast.error("Não prestador");
+      toast.error("Não prestador.");
+      yield put(signFailure());
       return;
     }
 
