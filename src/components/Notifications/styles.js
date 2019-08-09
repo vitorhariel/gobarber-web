@@ -48,6 +48,11 @@ export const NotificationList = styled.div`
     border-right: 20px solid transparent;
     border-bottom: 20px solid rgba(0, 0, 0, 0.6);
   }
+
+  p {
+    color: #fff;
+    text-align: center;
+  }
 `;
 
 export const Scroll = styled(PerfectScrollBar)`
